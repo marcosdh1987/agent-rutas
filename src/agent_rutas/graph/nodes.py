@@ -9,7 +9,7 @@ import os
 
 TOOLS = [buscar_estado_rutas]
 
-model_core = os.environ.get("MODEL_CORE", "gpt4omini")
+model_core = os.environ.get("MODEL_CORE", "gemini-2.0-flash")
 factory = ModelFactory(model_name=model_core, temperature=0.5)
 llm = factory.create_model()
 

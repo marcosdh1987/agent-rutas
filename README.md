@@ -118,7 +118,7 @@ curl -X POST http://localhost:8000/api/chat \
   -d '{
     "input_question": "What is the status of route P013?",
     "user_id": "user123",
-    "llm_model_core": "gpt4omini",
+    "llm_model_core": "gemini-2.0-flash",
     "conversation_id": "",
     "chat_history": []
   }'
