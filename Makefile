@@ -83,6 +83,7 @@ run-docker:
 	@docker run --platform=linux/amd64 \
 		--name agent-rutas-container \
 		-p 8000:8000 \
+		--env-file .env \
 		--rm \
 		$(IMAGE_NAME):$(IMAGE_TAG)
 
