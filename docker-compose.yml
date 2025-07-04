@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  agent-rutas:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - PORT=8000
+      - HOST=0.0.0.0
+    # Uncomment and configure if you have an .env file
+    # env_file:
+    #   - .env
+    volumes:
+      # Mount logs directory if needed
+      - ./logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - agent-network
+
+  # Add other services here if needed (databases, redis, etc.)
+  
+networks:
+  agent-network:
+    driver: bridge
+
+volumes:
+  logs:

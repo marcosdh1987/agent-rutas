@@ -1,0 +1,67 @@
+# Development tools
+autoflake
+black
+isort
+pylint
+pytest
+pytest-cov
+Sphinx
+
+# Core dependencies
+python-dotenv>=1.0.0
+prompt-toolkit
+
+# Promptflow (with constraints)
+# promptflow>=1.10.0,<2.0.0
+# promptflow-core>=1.10.0,<2.0.0
+# promptflow-devkit>=1.10.0,<2.0.0
+# promptflow-tools>=1.10.0,<2.0.0
+# promptflow-tracing>=1.10.0,<2.0.0
+
+# LangChain (same versions as main project)
+langchain-core>=0.2.0,<0.4.0
+langchain>=0.2.0,<0.4.0
+langchain-community>=0.2.0,<0.4.0
+langchain-openai>=0.1.0,<0.3.0
+langchain-milvus
+langchain-google-genai>=1.0.0,<2.0.0
+
+# OpenAI
+openai>=1.0.0,<2.0.0
+
+# Vector databases
+pymilvus>=2.4.0,<3.0.0
+
+# Data processing
+pandas>=1.5.0,<3.0.0
+
+# Jupyter
+ipykernel
+
+# Web frameworks
+fastapi>=0.104.0
+streamlit>=1.20.0
+streamlit_oauth
+uvicorn>=0.20.0
+
+# Utilities
+colorama
+retrying
+
+# Database
+# psycopg2-binary
+
+# AWS
+boto3>=1.26.0
+langchain-aws>=0.1.0,<1.0.0
+
+# LangGraph
+langgraph>=0.1.0,<1.0.0
+langgraph-cli>=0.1.0,<1.0.0
+langgraph-cli[inmem]
+
+# Tools
+PyPDF2
+wikipedia
+watchtower
+redis>=4.0.0

@@ -1,0 +1,45 @@
+.venv/
+venv/
+env/
+.env
+
+*.pyc
+__pycache__/
+dash/__pycache__/
+webapp01/__pycache__/
+
+instance/
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+dist/
+build/
+*.egg-info/
+
+
+#promptflow temps
+.promptflow/
+.vscode/
+
+#milvus temps
+milvus/volumes/*
+volumes/*
+
+#app logs
+flow/logger/data/*
+notebooks/memory/data/*
+notebooks/chat_history.db
+chat_history.db
+notebooks/azure-sdk.ipynb
+notebooks/data/users.db
+
+.langgraph_api/
+
+src/logger/data/*
+
+
+.venv-ci/
+
+test-reports/
